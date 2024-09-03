@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Privacy Policy</title>
+    <title>Privacy Policy - Athena Studenti</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,29 +30,125 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        h2 {
+            color: #4CAF50;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #4CAF50;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Privacy Policy</h1>
+        <h1>Privacy Policy - Athena Studenti</h1>
     </header>
 
     <section>
+        <h2>1. Introduzione</h2>
         <p>
-            Your privacy is critically important to us. We follow a few fundamental principles:
+            Ai sensi del Regolamento Europeo n. 2016/679 c.d. "GDPR", la presente informativa
+            privacy descrive il funzionamento e il trattamento dei dati dell'applicazione
+            "Athena Studenti" (di seguito "App" o "Athena"). La presente informativa non 
+            si riferisce al trattamento dei dati degli utenti in altri siti web eventualmente
+            consultati dall'utente tramite link ipertestuali eventualmente presenti nell'App.
+        </p>
+
+        <h2>2. Funzionalità dell'applicazione</h2>
+        <p>Athena fornisce i seguenti servizi agli studenti che la utilizzano:</p>
+        <ul>
+            <li>Una sezione "Calendario" che permette di visualizzare il proprio orario scolastico e di aggiungere note personali;</li>
+            <li>Una sezione "Piantina" contenente una planimetria con un filtro per una ricerca efficiente delle classi;</li>
+            <li>Una sezione "Risorse" nella quale è possibile visualizzare note, appunti e altre risorse fornite dai professori;</li>
+            <li>Una sezione "Utilità" nella quale è possibile effettuare calcoli relativi ai propri voti;</li>
+            <li>Una sezione "Assemblea" nella quale è possibile creare gruppi e iscriversi alle assemblee scolastiche;</li>
+            <li>Una sezione "Sconti" nella quale è possibile vedere le promozioni fornite dai locali cittadini agli studenti della scuola.</li>
+        </ul>
+
+        <h2>3. Conformità alla normativa GDPR</h2>
+        <p>
+            Athena rispetta il Regolamento generale sulla protezione dei dati ("GDPR"). Ciò
+            include il modo in cui raccogliamo, utilizziamo e proteggiamo i tuoi dati personali.
+            Raccogliamo solo i dati necessari per il funzionamento dell'App e l'utente ha il pieno
+            controllo sui propri dati.
+        </p>
+
+        <h2>4. Dati raccolti</h2>
+        <p>
+            L'app raccoglie e immagazzina i dati elencati con le seguenti finalità:
         </p>
         <ul>
-            <li>We don't ask you for personal information unless we truly need it.</li>
-            <li>We don’t share your personal information with anyone except to comply with the law or protect our rights.</li>
-            <li>We don’t store personal information unless required for the ongoing operation of our services.</li>
+            <li>Il tuo nome e cognome. Sono utilizzati per confermare la tua identità quando crei o ti iscrivi a gruppi per le assemblee di istituto;</li>
+            <li>La tua email scolastica. È utilizzata per permetterti di effettuare l'autenticazione attraverso Firebase Authentication;</li>
+            <li>La tua classe di appartenenza. È utilizzata per mostrare l'orario settimanale nella sezione "Calendario";</li>
+            <li>Le tue note personali. Sono utilizzate per permetterti di osservarle dalla sezione "Calendario".</li>
+        </ul>
+
+        <h2>5. Sicurezza dei dati</h2>
+        <p>
+            I dati raccolti dall'applicazione sono immagazzinati in sicurezza utilizzando 
+            FirebaseAuth e Cloud Firestore, servizi offerti da Google, e sono criptati sia
+            nei trasferimenti che a riposo.
+        </p>
+
+        <h2>6. Trattenimento dei dati</h2>
+        <p>
+            Tratterremo i tuoi dati personali finché il tuo account rimarrà attivo e continueremo 
+            a fornire i servizi elencati in questa normativa. Se decidi di eliminare il tuo account
+            o di ritirare il consenso, i tuoi dati saranno permanentemente eliminati dai nostri
+            sistemi entro 30 giorni.
+        </p>
+
+        <h2>7. Diritti dell'utente nel rispetto della normativa GDPR</h2>
+        <p>Un utente all'interno dello Spazio Economico Europeo possiede i seguenti diritti:</p>
+        <ul>
+            <li>Diritto all'accesso. Puoi richiedere una copia dei tuoi dati personali che possediamo;</li>
+            <li>Diritto di rettifica. Puoi richiedere la correzione di dati inaccurati o incompleti relativi alla tua persona;</li>
+            <li>Diritto di cancellazione. Puoi richiedere l'eliminazione dei tuoi dati personali in qualsiasi momento;</li>
+            <li>Diritto di limitazione trattamento. Puoi ottenere la limitazione del trattamento dei dati personali;</li>
+            <li>Diritto di notifica. Riceverai comunicazioni riguardo a eventuali rettifiche, cancellazioni o limitazioni del trattamento dei tuoi dati;</li>
+            <li>Diritto di portabilità. Puoi ottenere i tuoi dati personali e trasmetterli a un altro servizio senza alcun impedimento;</li>
+            <li>Diritto di opposizione. Puoi opporti in qualsiasi momento al trattamento dei tuoi dati personali.</li>
+        </ul>
+
+        <h2>8. Servizi di Terze Parti</h2>
+        <p>
+            La nostra app si appoggia a servizi esterni per le seguenti funzioni:
+        </p>
+        <ul>
+            <li>Firebase Authentication (FirebaseAuth). FirebaseAuth è un servizio Google utilizzato per gestire in sicurezza l'autenticazione in conformità alla normativa GDPR;</li>
+            <li>Cloud Firestore. Cloud Firestore è un database cloud offerto da Google che utilizziamo per immagazzinare i dati utilizzati dall'app. I dati inseriti sono criptati sia nei trasferimenti che a riposo, garantendo la protezione da accessi non autorizzati;</li>
+            <li>Google Drive. Google Drive è utilizzato per immagazzinare i dati caricati dai professori ai fini di visualizzazione nella sezione "Risorse";</li>
+            <li>Google Maps. Google Maps è utilizzato per vedere la posizione dei locali che offrono convenzioni agli studenti.</li>
         </ul>
         <p>
-            Special Characters Handling Example: &lt;, &gt;, &amp;, &quot;, &#39;, &#169;, &#174;, &#8364;.
+            Google potrebbe processare dati per questi servizi, ma non ha un controllo sulle
+            tue informazioni personali oltre a quelle necessarie per fornire i propri servizi.
+            Non condividiamo i tuoi dati personali con terze parti, a meno che non sia 
+            esplicitamente richiesto dalla legge.
         </p>
         <p>
-            If you have any questions about our privacy policy, feel free to contact us.
+            Per ulteriori informazioni su come Google elabora e protegge i tuoi dati, consulta
+            le relative norme sulla privacy:
         </p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy?hl=it" target="_blank">Informativa privacy Google</a></li>
+            <li><a href="https://firebase.google.com/support/privacy?hl=it#firebase_support_for_gdpr_and_ccpa" target="_blank">Informativa privacy Firebase</a></li>
+        </ul>
+
+        <h2>9. Informazioni per contattarci</h2>
+        <p>Se hai domande o preoccupazioni relative ai termini e condizioni di Athena, puoi contattarci attraverso:</p>
+        <ul>
+            <li>Email: <a href="mailto:2lorenzogandolfi@gmail.com">2lorenzogandolfi@gmail.com</a> o <a href="mailto:negrini.alessandro.06@gmail.com">negrini.alessandro.06@gmail.com</a></li>
+            <li>Cellulare: +39 3497831617 o +39 3408308704</li>
+        </ul>
     </section>
 </body>
 </html>
-
