@@ -7,46 +7,121 @@
     <title>Privacy Policy - Athena Studenti</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
             color: #333;
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
+
         header {
-            text-align: center;
-            padding: 20px 0;
+            position: sticky;
+            top: 0;
             background-color: #4CAF50;
             color: white;
+            text-align: center;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
+
         h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 2.5em;
+            letter-spacing: 1px;
         }
+
         section {
             background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 1000px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
+
         h2 {
             color: #4CAF50;
-            margin-top: 20px;
+            font-size: 1.8em;
+            margin-top: 30px;
+            position: relative;
         }
+
+        h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 60px;
+            height: 3px;
+            background-color: #4CAF50;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
         ul {
-            list-style-type: disc;
+            list-style: none;
+            padding: 0;
             margin-left: 20px;
         }
-        li {
+
+        ul li {
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHZpZXdCb3g9IjAgMCA2IDYiPgogIDxwYXRoIGQ9Ik00LjI5MSAyLjIzN2wtMS40NzkgMS40NzktMS4yMy0xLjIzIDEuMjMtMS4yMyAxLjQ3OSAxLjQ3OXptMCAyLjU5M2wtMS40NzkgMS40NzktMS4yMy0xLjIzIDEuMjMtMS4yMyAxLjQ3OSAxLjQ3OXoiIGZpbGw9IiM0Q0FGNTAiLz4KPC9zdmc+') left center no-repeat;
+            background-size: 16px;
+            padding-left: 24px;
             margin-bottom: 10px;
         }
+
         a {
             color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #388E3C;
+        }
+
+        button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 20px 0;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #388E3C;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Privacy Policy - Athena Studenti</h1>
     </header>
@@ -66,7 +141,7 @@
         <ul>
             <li>Una sezione "Calendario" che permette di visualizzare il proprio orario scolastico e di aggiungere note personali;</li>
             <li>Una sezione "Piantina" contenente una planimetria con un filtro per una ricerca efficiente delle classi;</li>
-            <li>Una sezione "Risorse" nella quale è possibile visualizzare note, appunti e altre risorse fornite dai professori;</li>
+            <li>Una sezione "Marketplace" nella quale è possibile visualizzare libri e vestiti messi in vendita dagli altri studenti;</li>
             <li>Una sezione "Utilità" nella quale è possibile effettuare calcoli relativi ai propri voti;</li>
             <li>Una sezione "Assemblea" nella quale è possibile creare gruppi e iscriversi alle assemblee scolastiche;</li>
             <li>Una sezione "Sconti" nella quale è possibile vedere le promozioni fornite dai locali cittadini agli studenti della scuola.</li>
@@ -89,6 +164,7 @@
             <li>La tua email scolastica. È utilizzata per permetterti di effettuare l'autenticazione attraverso Firebase Authentication;</li>
             <li>La tua classe di appartenenza. È utilizzata per mostrare l'orario settimanale nella sezione "Calendario";</li>
             <li>Le tue note personali. Sono utilizzate per permetterti di osservarle dalla sezione "Calendario".</li>
+            <li>Le tue offerte. Sono utilizzate per permetterne la visualizzazione agli altri studenti.</li>
         </ul>
 
         <h2>5. Sicurezza dei dati</h2>
@@ -125,7 +201,6 @@
         <ul>
             <li>Firebase Authentication (FirebaseAuth). FirebaseAuth è un servizio Google utilizzato per gestire in sicurezza l'autenticazione in conformità alla normativa GDPR;</li>
             <li>Cloud Firestore. Cloud Firestore è un database cloud offerto da Google che utilizziamo per immagazzinare i dati utilizzati dall'app. I dati inseriti sono criptati sia nei trasferimenti che a riposo, garantendo la protezione da accessi non autorizzati;</li>
-            <li>Google Drive. Google Drive è utilizzato per immagazzinare i dati caricati dai professori ai fini di visualizzazione nella sezione "Risorse";</li>
             <li>Google Maps. Google Maps è utilizzato per vedere la posizione dei locali che offrono convenzioni agli studenti.</li>
         </ul>
         <p>
